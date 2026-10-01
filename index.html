@@ -169,7 +169,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:13.5px;border-top:1px so
         <div class="prose">
           <p>Comecei em 2014 ativando serviços e dando suporte às equipes de campo. Passei por quatro cargos na mesma empresa, com promoções internas, e trabalhei por instalação, fusão e manutenção de fibra, até chegar à manutenção de backbone e pontos de presença em grandes operadoras.</p>
           <p>Nesse trabalho, o dia a dia é investigar: ler uma medição de OTDR, achar onde está a perda, entender a causa e documentar a solução, muitas vezes sob pressão. É o mesmo raciocínio que uso hoje com dados.</p>
-          <p>Curso graduação em Ciência de Dados e Inteligência Artificial e venho construindo projetos práticos em Python: automações que eliminam trabalho manual, análises com Pandas, chatbots com IA e um sistema web publicado em produção.</p>
+          <p>Curso graduação em Ciência de Dados e Inteligência Artificial e venho construindo projetos práticos em Python: automações que eliminam trabalho manual, análises com Pandas, um chatbot com IA, um sistema de vendas publicado na internet e um estudo estatístico com dados reais de mercado.</p>
           <p>Busco uma oportunidade remota ou híbrida como Analista de Dados Júnior, onde eu possa unir a visão de quem conhece a operação com as ferramentas de dados.</p>
         </div>
         <dl class="facts">
@@ -185,42 +185,49 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:13.5px;border-top:1px so
 
     <section id="projetos">
       <h2 class="sec-title">Projetos</h2>
-      <!-- Troque AlessandroMaxv10 e os nomes dos repositórios pelos seus. Se o projeto não tiver versão online, apague o link "Ver online". -->
       <ul class="projects">
         <li class="project">
-          <div><h3>Automação de processos</h3><span class="origin">Python Power Up</span></div>
+          <div><h3>Padrões de candles preveem o preço?</h3><span class="origin">Estudo estatístico próprio</span></div>
           <div>
-            <p>Bots que fazem o trabalho repetitivo: navegam em sistemas, coletam informações com web scraping e registram tudo automaticamente, economizando horas de trabalho manual.</p>
-            <ul class="tags"><li>Python</li><li>RPA</li><li>Web scraping</li><li>Bots</li></ul>
+            <p>50 mil candles reais de 5 criptomoedas, coletados da API da Binance. Testei 6 padrões de candles e o cruzamento de médias com backtest, intervalo de Wilson, correção de Bonferroni, walk-forward, Brier score e um grupo de controle aleatório. Nenhum padrão mostrou poder de previsão duradouro.</p>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>SciPy</li><li>API REST</li><li>Estatística</li></ul>
           </div>
-          <div class="links"><a href="https://github.com/AlessandroMaxv10/automacao-python">Ver código</a></div>
+          <div class="links"><a href="https://github.com/AlessandroMaxv10/estudo-padroes-candles">Ver código</a></div>
         </li>
         <li class="project">
           <div><h3>Análise de cancelamento de clientes</h3><span class="origin">Python Insights</span></div>
           <div>
-            <p>Tratamento de uma base de clientes com Pandas e gráficos que mostram as principais causas de cancelamento, com propostas de ação baseadas nos dados.</p>
-            <ul class="tags"><li>Python</li><li>Pandas</li><li>Limpeza de dados</li><li>Gráficos</li></ul>
+            <p>Base de 50 mil clientes tratada com Pandas. Três causas explicam a maior parte dos cancelamentos e, atacando-as, a taxa cai de 56,8% para 18,4%.</p>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>Plotly</li><li>Limpeza de dados</li></ul>
           </div>
           <div class="links"><a href="https://github.com/AlessandroMaxv10/analise-cancelamento-clientes">Ver código</a></div>
         </li>
         <li class="project">
-          <div><h3>ChatBot com IA</h3><span class="origin">Python IA</span></div>
+          <div><h3>Automação de cadastro de produtos</h3><span class="origin">Python Power Up</span></div>
           <div>
-            <p>Chatbot com Inteligência Artificial que gera respostas usando agentes, pensado para atendimento e suporte ao cliente.</p>
-            <ul class="tags"><li>Python</li><li>IA generativa</li><li>Agentes</li></ul>
+            <p>Bot de RPA que abre o sistema, faz login e cadastra 293 produtos a partir de uma planilha, sem intervenção manual e sem erros de digitação.</p>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>PyAutoGUI</li><li>RPA</li></ul>
           </div>
-          <div class="links"><a href="https://github.com/AlessandroMaxv10/chatbot-ia">Ver código</a></div>
+          <div class="links"><a href="https://github.com/AlessandroMaxv10/automacao-python">Ver código</a></div>
         </li>
         <li class="project">
-          <div><h3>Sistema web de vendas</h3><span class="origin">Python Dev</span></div>
+          <div><h3>Sistema de vendas com dashboard</h3><span class="origin">Python Dev · publicado online</span></div>
           <div>
-            <p>Sistema de vendas e gestão online com cadastro, gerenciamento e dashboard em um único site, publicado em produção.</p>
-            <ul class="tags"><li>Python</li><li>Web</li><li>Dashboard</li><li>Deploy</li></ul>
+            <p>Aplicação web para cadastrar vendas e acompanhar faturamento, ticket médio e gráficos por vendedor, produto e mês em tempo real. Publicada na internet: dá para testar o cadastro e ver o dashboard mudar.</p>
+            <ul class="tags"><li>Python</li><li>Streamlit</li><li>Pandas</li><li>Plotly</li><li>Deploy</li></ul>
           </div>
           <div class="links">
-            <a href="https://github.com/AlessandroMaxv10/sistema-vendas-web">Ver código</a>
-            <a href="#">Ver online</a>
+            <a href="https://sistema-vendas-alessandro.streamlit.app/">Testar online</a>
+            <a href="https://github.com/AlessandroMaxv10/sistema-vendas">Ver código</a>
           </div>
+        </li>
+        <li class="project">
+          <div><h3>ChatBot com IA</h3><span class="origin">Python IA</span></div>
+          <div>
+            <p>Chat web em Streamlit que conversa com um modelo de IA generativa e guarda o histórico como memória. A chave da API fica fora do código.</p>
+            <ul class="tags"><li>Python</li><li>Streamlit</li><li>IA generativa</li></ul>
+          </div>
+          <div class="links"><a href="https://github.com/AlessandroMaxv10/chatbot-ia">Ver código</a></div>
         </li>
       </ul>
     </section>
@@ -229,8 +236,8 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:13.5px;border-top:1px so
       <h2 class="sec-title">Habilidades</h2>
       <div class="skills">
         <div class="skill"><h3>Dados e IA</h3><p>Python, Pandas, tratamento e limpeza de dados, gráficos e dashboards, fundamentos de Machine Learning, chatbots e agentes de IA.</p></div>
-        <div class="skill"><h3>Automação</h3><p>Automação de tarefas, RPA, bots, web scraping e integração com APIs REST.</p></div>
-        <div class="skill"><h3>Desenvolvimento</h3><p>Sistemas web em Python com cadastro, gerenciamento, dashboard e deploy.</p></div>
+        <div class="skill"><h3>Automação e aplicações web</h3><p>RPA, bots, web scraping, APIs REST e aplicações web em Streamlit publicadas na internet.</p></div>
+        <div class="skill"><h3>Estatística aplicada</h3><p>Intervalos de confiança, testes de hipótese, backtest e validação fora da amostra.</p></div>
         <div class="skill"><h3>Redes e telecom</h3><p>Fibra óptica, certificação com OTDR, backbone e POPs, troca de switches e módulos ópticos, suporte B2B.</p></div>
         <div class="skill"><h3>Gestão</h3><p>Excel, controle de escalas, orçamento de horas extras e acompanhamento de equipes em campo.</p></div>
         <div class="skill"><h3>Forma de trabalhar</h3><p>Investigação de causa raiz, documentação precisa e calma sob pressão.</p></div>
@@ -252,7 +259,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:13.5px;border-top:1px so
           <ul class="list">
             <li><strong>Fundamentos de Linguagem Python do Básico a Aplicações de IA</strong><span>Data Science Academy, 96 horas, <b class="score">97% de aproveitamento</b>, 2026</span></li>
             <li><strong>Fundamentos de Linguagem Python para Análise de Dados, Data Science e Machine Learning</strong><span>Data Science Academy, 64 horas, <b class="score">93% de aproveitamento</b>, 2026</span></li>
-            <li><strong>Jornada Python</strong><span>Hashtag Treinamentos: Power Up, Insights, IA e Dev</span></li>
+            <li><strong>Jornada Python</strong><span>Hashtag Treinamentos: automação, análise de dados, IA e sistema web, 2026</span></li>
             <li><strong>Python</strong><span>Santander Open Academy, 2026</span></li>
           </ul>
         </div>
